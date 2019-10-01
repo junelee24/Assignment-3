@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    font-family: helvetica, sans-serif;
+    background-color: black;
+
+}
+.container{
+
+}
+.rectangle{
+    position: absolute;
+    background-color: black;
+    width: 20vw;
+    height: 100%;
+
+    padding:3%;
+    box-sizing:border-box;
+
+    animation-name:bg-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+
+}
+.circle{
+    position: absolute;
+    left:25%;
+    top:10%;
+    width:20vh;
+    height:20vh;
+    border-radius: 90px;
+    background-color:#fbb518;
+    animation-name: circle-bounce;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in;
+}
+
+.circle2{
+    position: absolute;
+    left:25%;
+    top:10%;
+    width:60vh;
+    height:60vh;
+    border-radius: 400px;
+    background-color:#9ac7e0;
+    animation-name: circle2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+
+}
+
+#animation{
+    color: #fbb518;
+    font-size: 20px;
+    letter-spacing:8px;
+    text-transform: uppercase;
+
+    animation-name: animation-text;
+    animation-duration: 10s;
+    animation-iteration-count: 4;
+}
+
+
+@keyframes bg-color{
+    from{background-color: #9ac7e0;}
+    to{background-color: #e499cd;}
+}
+
+@keyframes circle-bounce{
+    0%{left:25%;
+    }
+
+    25%{left:45%;
+    }
+
+    50%{left:90%;
+    }
+
+    75%{left:45%;
+        }
+
+    100%{left:25%;
+    }
+
+    from{width:20vh;
+    height:20vh;}
+    to{width:30vh;
+    height:30vh;
+    border-radius: 600px;
+    }
+}
+
+@keyframes circle2 {
+    from{background-color:#e499cd;}
+    to{background-color:#9ac7e0;}
+}
+
+.circle:hover{
+    background-color: white;
+
+}
+.circle:active{
+    background-color:white;
+
+}
