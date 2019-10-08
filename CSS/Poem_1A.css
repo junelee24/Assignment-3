@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    color: #ffca0f;
+}
+
+.container{
+    position: absolute;
+    padding: 30px;
+    top: 10%;
+    left: 28%;
+    width: 40%;
+    height: 140%;
+    border: dashed #ffca0f 1px;
+    text-align: center;
+
+font-family: 'PT Serif', serif;
+    line-height:15px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 400;
+
+    animation-name:text-color;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+
+
+}
+
+.heading{
+    font-family: 'Fjalla One', sans-serif;
+    font-style: italic;
+}
+
+#title{
+    font-size: 50px;
+    text-transform: uppercase;
+    animation-name:title-color;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+
+
+}
+#author{
+    animation-name:author-color;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+}
+
+@keyframes title-color{
+    from{color:black;}
+    to{color:#ffca0f;}
+}
+@keyframes author-color{
+    from{color:black;}
+    to{color:#ffca0f;}
+}
+@keyframes text-color{
+    from{color:black;}
+    to{color:#ffca0f;}
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        background-color: #ffca0f;
+    }
+    .container{
+        color:black;
+        border: dashed black 1px;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+    }
+}

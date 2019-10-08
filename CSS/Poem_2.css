@@ -1,0 +1,39 @@
+body{
+    background-color: #dd781f;
+
+
+}
+
+.container{
+    position: absolute;
+    padding: 30px;
+    top: 10%;
+    left: 9%;
+    width: 80%;
+    height: 150%;
+
+    text-align: center;
+    line-height:40px;
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: lowercase;
+
+
+}
+
+.heading{
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+#title{
+font-weight: 700;
+text-transform: uppercase;
+font-size: 30px;
+}
+
+#author{
+    font-size:15px;
+    font-style: oblique;
+}

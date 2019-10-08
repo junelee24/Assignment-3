@@ -1,0 +1,97 @@
+body{
+
+
+}
+
+.container{
+    position: absolute;
+    padding: 30px;
+    top: 10%;
+    left: 9%;
+    width: 80%;
+    height: 140%;
+
+    text-align: center;
+    line-height:15px;
+    font-size: 14px;
+    letter-spacing: 10px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+
+
+}
+
+.heading{
+
+
+}
+
+#title{
+font-weight: 700;
+text-transform: capitalize;
+font-size: 30px;
+}
+
+#author{
+    font-size:15px;
+    font-style: oblique;
+}
+
+.line{
+    position: absolute;
+    top: 45px;
+    width: 250px;
+    height: 1.5px;
+    background-color: black;
+
+    animation-name: line-move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.line2{
+    position: absolute;
+    top: 159px;
+    width: 200px;
+    height: 1.5px;
+    background-color: black;
+
+    animation-name: line-move2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes line-move {
+    0%{right:0%;}
+    25%{right:20%;}
+    40%{right:40%;}
+    50%{right:40%;}
+    60%{right:40%;}
+    75%{right:20%;}
+    100%{right:0%;}
+}
+
+@keyframes line-move2 {
+    0%{left:0%;}
+    25%{left:20%;}
+    40%{left:41%;}
+    50%{left:41%;}
+    60%{left:41%;}
+    75%{left:20%;}
+    100%{left:0%;}
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        background-color: black;
+    }
+    .container{
+        color: white;
+    }
+    .line{
+        background-color: white;
+    }
+    .line2{
+        background-color: white
+    }
+}

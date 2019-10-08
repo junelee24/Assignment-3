@@ -1,0 +1,41 @@
+body{
+    background-color: #0adb38;
+    color: #00ff38;
+}
+
+.container{
+    position: absolute;
+    padding: 30px;
+    top: 10%;
+    left: 22%;
+    width: 40%;
+    height: 140%;
+    border: solid #00ff38 90px;
+    text-align: right;
+
+
+font-family: monospace;
+    line-height:15px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 400;
+
+
+}
+
+.heading{
+    font-family: 'Fjalla One', sans-serif;
+    font-style: normal;
+    letter-spacing: 6px;
+}
+
+#title{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#author{
+    font-style:oblique;
+    position: absolute;
+    right: 10%;
+}

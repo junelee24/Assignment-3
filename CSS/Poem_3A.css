@@ -1,0 +1,61 @@
+body {
+    background-color: #9fb7c7;
+    animation-name: bg-color;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+
+.container {
+    position: absolute;
+    padding: 30px;
+    top: 5%;
+    width: 100%;
+    height: 140%;
+    text-align: center;
+    line-height: 15px;
+    font-size: 14px;
+    letter-spacing: 25px;
+
+    font-family: 'Josefin Sans', sans-serif;
+    animation-name: text;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    color: white;
+
+}
+
+.heading {
+    letter-spacing: 3px;
+}
+
+#title {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+
+#author {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+@keyframes text {
+    from{letter-spacing: normal;}
+    to{letter-spacing: 25px;}
+    from{color:black;}
+    to{color:white;}
+}
+@keyframes bg-color {
+    from{background-color:black;}
+    to{background-color:#9fb7c7;}
+
+}
+@media only screen and (max-width: 600px){
+    body{
+        background-color: white;
+
+    }
+    .container{
+        color:#9fb7c7;
+    }
+}
